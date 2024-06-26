@@ -1,0 +1,115 @@
+{
+  "uuid": "f91e9f86-7fc2-4fcc-807f-058cb4f863c2",
+  "lastMigration": 32,
+  "name": "Canopy api v3",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "480db60b-4f46-492f-8781-eac5ad0d8eef",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v3/benchmarks/list",
+      "responses": [
+        {
+          "uuid": "f21f4920-cecb-4956-931a-bf79078e1029",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "include_customized = false",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "hjjx",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "include_customized",
+              "value": "true",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "FALLBACK"
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "480db60b-4f46-492f-8781-eac5ad0d8eef"
+    }
+  ],
+  "proxyMode": true,
+  "proxyHost": "https://dev-api.kurtosys.org",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "a39bb26f-da65-4c4c-9adf-8ce8bd16aab4",
+      "id": "q5e5",
+      "name": "Benchmark Mock Data",
+      "documentation": "",
+      "value": "[\n    {\n        \"ticker\": \"2822_HK\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Csop Ftse China A50 Etf-Hkd\",\n        \"index_weights\": [{\n            \"ticker\": \"2822_HK\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"CSINDU_SW\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Ishares Dow Jones Indus Avrg\",\n        \"index_weights\": [{\n            \"ticker\": \"CSINDU_SW\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"FIXED_1\",\n        \"is_customized\": false,\n        \"classification\": \"Fixed Rate\",\n        \"index_name\": \"Fixed rate： 1%\",\n        \"index_weights\": [{\n            \"ticker\": \"FIXED_1\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"BMK_HSI_HK_50_KOSPI_SK_50\",\n        \"is_customized\": true,\n        \"classification\": \"Customized\",\n        \"index_name\": \"50%Hang Seng Index+50%Kospi Index\",\n        \"index_weights\": [{\n            \"ticker\": \"HSI_HK\",\n            \"weight\": 50\n        },{\n            \"ticker\": \"KOSPI_SK\",\n            \"weight\": 50\n        }]\n    }\n]"
+    },
+    {
+      "uuid": "5b1d686f-5070-4869-b423-e4f538524b21",
+      "id": "hjjx",
+      "name": "Benchmark Mock Data (copy)",
+      "documentation": "",
+      "value": "[\n    {\n        \"ticker\": \"2822_HK\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Csop Ftse China A50 Etf-Hkd\",\n        \"index_weights\": [{\n            \"ticker\": \"2822_HK\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"CSINDU_SW\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Ishares Dow Jones Indus Avrg\",\n        \"index_weights\": [{\n            \"ticker\": \"CSINDU_SW\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"FIXED_1\",\n        \"is_customized\": false,\n        \"classification\": \"Fixed Rate\",\n        \"index_name\": \"Fixed rate： 1%\",\n        \"index_weights\": [{\n            \"ticker\": \"FIXED_1\",\n            \"weight\": 100\n        }]\n    }\n]"
+    }
+  ],
+  "callbacks": []
+}

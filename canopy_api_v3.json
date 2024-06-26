@@ -30,7 +30,7 @@
             {
               "target": "query",
               "modifier": "include_customized",
-              "value": "true",
+              "value": "false",
               "invert": false,
               "operator": "equals"
             }

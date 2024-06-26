@@ -106,7 +106,7 @@
     {
       "uuid": "5b1d686f-5070-4869-b423-e4f538524b21",
       "id": "hjjx",
-      "name": "Benchmark Mock Data (copy)",
+      "name": "Benchmark Mock Data (No Customized)",
       "documentation": "",
       "value": "[\n    {\n        \"ticker\": \"2822_HK\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Csop Ftse China A50 Etf-Hkd\",\n        \"index_weights\": [{\n            \"ticker\": \"2822_HK\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"CSINDU_SW\",\n        \"is_customized\": false,\n        \"classification\": \"Stock index\",\n        \"index_name\": \"Ishares Dow Jones Indus Avrg\",\n        \"index_weights\": [{\n            \"ticker\": \"CSINDU_SW\",\n            \"weight\": 100\n        }]\n    },\n    {\n        \"ticker\": \"FIXED_1\",\n        \"is_customized\": false,\n        \"classification\": \"Fixed Rate\",\n        \"index_name\": \"Fixed rate： 1%\",\n        \"index_weights\": [{\n            \"ticker\": \"FIXED_1\",\n            \"weight\": 100\n        }]\n    }\n]"
     }
